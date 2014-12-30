@@ -1,4 +1,17 @@
-//write an algorithm to sort an int[] in linear time
+/*
+Problem: write an algorithm to sort an int[] in linear time
+Hint: Think about how HashTable achieves linear time
+
+Originally solved by Yumen using counting sort
+Updated by ... becasue of mistakes in ...
+
+Strategy: 1. find min and max 2. counting the number of each element 3. put elements back based on locations 4. an offset is used to tackle with negative numbers
+
+Running Time: 3N.
+
+Comments:
+
+*/
 #include <iostream>
 #include <vector>
 #include <map>
