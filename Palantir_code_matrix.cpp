@@ -64,7 +64,12 @@ int main(){
         string complement;
         int max_compliment = 0;
         for (std::string::iterator it3 = maximum.begin(); it3 != maximum.end(); it3++){
-                complement.append(it3->first);
+                if (*it3 == '0'){
+                        complement.append('1');
+                }
+                else{
+                        complement.append('0');
+                }
         }
         if (hashed.find(complement) != hashed.end()){
                 max_complement = (hashed.find(complement))->second;
