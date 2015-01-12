@@ -43,7 +43,7 @@ int main(){
                 }
                 std::map<std::string, int>::iterator it = hashed.begin();
                 it = hashed.find(current);
-                if (it != hashed.end()){
+                if (it == hashed.end()){
                         hashed.insert(std::pair<std::string, int>(current, 1));
                 }
                 else{
